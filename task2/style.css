@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.time-display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px, 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#timer-input {
+    width: 100px;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: white;
+    outline: none;
+}
+
+#timer-input::placeholder {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        padding: 10px;
+        border-radius: 10px;
+    } 
+}

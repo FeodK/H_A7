@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="stopwatch">
+            <h2>Stopwatch</h2>
+            <div class="time-display" id="stopwatch-display">00:00:00</div>
+            <div class="btns">
+                <button id="start-stopwatch">Start</button>
+                <button id="pause-stopwatch">Pause</button>
+                <button id="reset-stopwatch">Reset</button>
+            </div>
+        </div>
+        
+        <div class="card" id="timer">
+            <h2>Timer</h2>
+            <input type="text" id="timer-input" placeholder="mm:ss">
+            <div class="time-display" id="timer-display">00:00</div>
+            <div class="btns">
+                <button id="start-timer">Start</button>
+                <button id="pause-timer">Pause</button>
+                <button id="reset-timer">Reset</button>
+            </div>
+            <div class="btns">
+                <button data-time="60">+1m</button>
+                <button data-time="10">+10s</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
